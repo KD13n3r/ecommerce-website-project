@@ -1,6 +1,7 @@
 import React from 'react';
 import Parts from './Parts';
 import pcParts from '../pcparts';
+import Navbar from './Navbar';
 
 function createPart(pcPart) {
     return (<Parts 
@@ -15,7 +16,7 @@ function createPart(pcPart) {
 function App() {
     return (
         <div>
-            <h1>PC Parts</h1>
+            <Navbar/>
             {pcParts.map(createPart)}
         </div>
     );
